@@ -17,6 +17,7 @@ A modern Android notes-taking application built with **Kotlin**, **Jetpack Compo
 ## Table of Contents
 
 - [Features](#features)
+- [Installation](#installation)
 - [Screenshots](#screenshots)
 - [Tech Stack](#tech-stack)
 - [Architecture](#architecture)
@@ -30,6 +31,7 @@ A modern Android notes-taking application built with **Kotlin**, **Jetpack Compo
 - [Dependencies](#dependencies)
 - [Configuration](#configuration)
 - [Troubleshooting](#troubleshooting)
+- [Contributing](#contributing)
 - [Future Improvements](#future-improvements)
 - [Author](#author)
 
@@ -71,6 +73,47 @@ A modern Android notes-taking application built with **Kotlin**, **Jetpack Compo
 - Dark and light theme (follows system)
 - Edge-to-edge layout
 - Reusable Compose components
+
+### Performance & Reliability
+- Optimized database queries with indices
+- Efficient coroutine-based async operations
+- Memory-efficient state management
+- Crash-free user experience with error handling
+
+### Accessibility
+- Touch-friendly UI components
+- Proper content descriptions for screen readers
+- High contrast color schemes for readability
+
+---
+
+## Installation
+
+### Prerequisites
+- Android Studio (Arctic Fox or later)
+- JDK 11 or higher
+- Android SDK 24+ (API Level 24+)
+- Git
+
+### Steps
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/khalidhussain-dev/NoteNova.git
+   cd NoteNova
+   ```
+
+2. **Open in Android Studio:**
+   - Launch Android Studio
+   - Click "Open an existing project"
+   - Navigate to the cloned `NoteNova` directory and select it
+
+3. **Build the project:**
+   - Android Studio will automatically download dependencies
+   - Allow Gradle to sync and build
+
+4. **Run on emulator or device:**
+   - Create an AVD (Android Virtual Device) or connect a physical device
+   - Click "Run" or press `Shift + F10`
 
 ---
 
@@ -389,6 +432,45 @@ applicationId = "com.example.notestaking"
 | Emulator too slow | Use a **x86_64** or **ARM** image with hardware acceleration enabled |
 | Java not found (CLI) | Set `JAVA_HOME` to Android Studio's JBR (see Build section) |
 | Room schema changes | Bump `@Database(version = …)` and add a migration or clear app data |
+
+---
+
+## Contributing
+
+We welcome contributions from the community! Here's how you can help:
+
+### How to Contribute
+1. **Fork the repository** on GitHub
+2. **Create a new branch** for your feature or fix:
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+3. **Make your changes** and commit with clear messages:
+   ```bash
+   git commit -m "Add: description of changes"
+   ```
+4. **Push to your fork** and create a **Pull Request** to the main repository
+5. **Describe your changes** in the PR with details and motivation
+
+### Contribution Guidelines
+- Follow Kotlin coding conventions and naming standards
+- Maintain the existing architecture pattern (MVVM)
+- Add comments for complex logic
+- Test your changes thoroughly on multiple Android versions
+- Update documentation if adding new features
+- Keep commits atomic and focused on single issues
+
+### Code Style
+- Use proper indentation (4 spaces)
+- Name variables clearly and descriptively
+- Comment non-obvious logic
+- Follow Material Design principles for UI changes
+
+### Report Issues
+- Check existing issues before reporting duplicates
+- Provide clear reproduction steps
+- Include device info, Android version, and logs
+- Be respectful and constructive
 
 ---
 
