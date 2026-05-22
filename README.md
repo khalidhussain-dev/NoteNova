@@ -19,6 +19,12 @@ A modern Android notes-taking application built with **Kotlin**, **Jetpack Compo
 ## Table of Contents
 
 - [Features](#features)
+  - [Authentication](#authentication-1)
+  - [Notes Management](#notes-management)
+  - [Limits & UX](#limits--ux)
+  - [UI/UX](#uiux)
+  - [Performance & Reliability](#performance--reliability)
+  - [Accessibility](#accessibility)
 - [Installation](#installation)
 - [Screenshots](#screenshots)
 - [Tech Stack](#tech-stack)
@@ -77,27 +83,32 @@ A modern Android notes-taking application built with **Kotlin**, **Jetpack Compo
 - Reusable Compose components
 
 ### Performance & Reliability
-- Optimized database queries with indices
-- Efficient coroutine-based async operations
-- Memory-efficient state management
-- Crash-free user experience with error handling
+- **Optimized Database Queries** - Indices on frequently queried columns for fast lookups
+- **Efficient Coroutine-Based Async** - Non-blocking I/O with Kotlin coroutines for smooth UI
+- **Memory-Efficient State Management** - StateFlow prevents unnecessary recompositions
+- **Crash-Free UX** - Comprehensive error handling and graceful failure recovery
+- **Database Integrity** - Foreign key constraints and CASCADE deletion for data consistency
+- **Performance Monitoring** - Optimized Room queries with proper pagination support
 
 ### Accessibility
-- Touch-friendly UI components
-- Proper content descriptions for screen readers
-- High contrast color schemes for readability
+- **Touch-Friendly UI Components** - Large, easy-to-tap buttons and interactive elements
+- **Screen Reader Support** - Proper content descriptions and semantic accessibility labels
+- **High Contrast Color Schemes** - Material 3 colors ensure readability in light and dark modes
+- **Keyboard Navigation** - Full keyboard support for accessibility-focused users
+- **Proper Focus Management** - Clear focus indicators on interactive elements
 
 ---
 
 ## Installation
 
 ### Prerequisites
-- Android Studio (Arctic Fox or later)
-- JDK 11 or higher
-- Android SDK 24+ (API Level 24+)
-- Git
+- **Android Studio** - Ladybug (2024.2.1) or later recommended
+- **JDK 11 or higher** - Android Studio includes bundled JBR
+- **Android SDK 24+** - API Level 24+ for runtime compatibility
+- **Git** - For cloning the repository
 
-### Steps
+### Step-by-Step Setup Instructions
+
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/khalidhussain-dev/NoteNova.git
@@ -106,16 +117,36 @@ A modern Android notes-taking application built with **Kotlin**, **Jetpack Compo
 
 2. **Open in Android Studio:**
    - Launch Android Studio
-   - Click "Open an existing project"
-   - Navigate to the cloned `NoteNova` directory and select it
+   - Click **File → Open** → Select the cloned `NoteNova` directory
+   - Accept the project structure and allow Android Studio to recognize it
 
-3. **Build the project:**
-   - Android Studio will automatically download dependencies
-   - Allow Gradle to sync and build
+3. **Gradle Sync:**
+   - Android Studio will automatically trigger a Gradle sync
+   - Wait for the sync to complete (this may take several minutes on first run)
+   - Accept any SDK license agreements if prompted
+   - Let Android Studio download missing components automatically
 
-4. **Run on emulator or device:**
-   - Create an AVD (Android Virtual Device) or connect a physical device
-   - Click "Run" or press `Shift + F10`
+4. **Verify Setup:**
+   - Ensure `local.properties` is created automatically with your SDK path
+   - No manual configuration is needed for local development
+
+### Build and Run Instructions
+
+**Debug APK Build:**
+```bash
+./gradlew assembleDebug
+# Output: app/build/outputs/apk/debug/app-debug.apk
+```
+
+**Run on Emulator:**
+- Open **Device Manager** (Tools → Device Manager)
+- Create a virtual device if needed (e.g., Pixel 7 with API 34+)
+- Select the emulator in the toolbar and click **Run ▶** or press `Shift + F10`
+
+**Run on Physical Device:**
+- Enable **Developer Options** and **USB Debugging** on your device
+- Connect via USB and authorize the computer
+- Select your device in Android Studio and click **Run ▶**
 
 ---
 
