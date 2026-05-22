@@ -2,6 +2,8 @@
 
 A modern Android notes-taking application built with **Kotlin**, **Jetpack Compose**, and **MVVM architecture**. NoteNova offers secure local authentication, rich note management, and a polished Material 3 interface with dark/light theme support.
 
+**Latest Update:** Fully functional note-taking app with user authentication, secure password hashing, and comprehensive note management system (May 2026)
+
 <p align="center">
   <img src="https://img.shields.io/badge/Platform-Android-green?style=flat-square" alt="Platform" />
   <img src="https://img.shields.io/badge/Kotlin-2.0.21-7F52FF?style=flat-square&logo=kotlin&logoColor=white" alt="Kotlin" />
