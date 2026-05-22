@@ -486,47 +486,103 @@ We welcome contributions from the community! Here's how you can help:
 5. **Describe your changes** in the PR with details and motivation
 
 ### Contribution Guidelines
-- Follow Kotlin coding conventions and naming standards
-- Maintain the existing architecture pattern (MVVM)
-- Add comments for complex logic
-- Test your changes thoroughly on multiple Android versions
-- Update documentation if adding new features
-- Keep commits atomic and focused on single issues
+- **Code Conventions** - Follow Kotlin coding conventions and naming standards
+- **Architecture** - Maintain the existing MVVM architecture pattern
+- **Documentation** - Add comments for complex logic and update docs for new features
+- **Testing** - Test thoroughly on multiple Android versions (API 24+)
+- **Commits** - Keep commits atomic and focused on single issues
+- **Branches** - Use descriptive branch names (feature/, bugfix/, docs/)
 
 ### Code Style
-- Use proper indentation (4 spaces)
-- Name variables clearly and descriptively
-- Comment non-obvious logic
-- Follow Material Design principles for UI changes
+- **Indentation** - Use 4 spaces (no tabs)
+- **Naming** - Use clear, descriptive names for variables, functions, and classes
+- **Comments** - Document non-obvious logic with meaningful comments
+- **Design** - Follow Material Design 3 principles for UI changes
+- **Imports** - Organize imports alphabetically and remove unused ones
+
+### Pull Request Process
+1. Ensure code is tested and builds without errors
+2. Update README.md if documentation changes are needed
+3. Link related issues in the PR description
+4. Respond to feedback and review comments
+5. Ensure all CI/CD checks pass before merge
 
 ### Report Issues
-- Check existing issues before reporting duplicates
-- Provide clear reproduction steps
-- Include device info, Android version, and logs
-- Be respectful and constructive
+- **Check First** - Verify the issue doesn't already exist
+- **Be Detailed** - Provide clear reproduction steps and expected behavior
+- **Environment Info** - Include device model, Android version, and app version
+- **Logs** - Attach logcat output or error messages
+- **Tone** - Be respectful and constructive in all communications
 
 ---
 
 ## Future Improvements
 
-- [ ] Cloud sync / Firebase backend
-- [ ] Rich text / markdown editor
-- [ ] Note folders or tags
-- [ ] Biometric app lock
-- [ ] Export notes (PDF / TXT)
-- [ ] Widget for quick capture
+### Feature Enhancements
+- [ ] Cloud sync with Firebase backend
+- [ ] Rich text editor with markdown support
+- [ ] Note folders and hierarchical organization
+- [ ] Tag-based categorization and filtering
+- [ ] Share notes via email or messaging
+- [ ] Bulk operations (multi-select, batch delete)
+
+### Security & Authentication
+- [ ] Biometric app lock (fingerprint/face recognition)
+- [ ] Two-factor authentication (2FA)
+- [ ] End-to-end encryption for sensitive notes
+- [ ] Backup and restore functionality
+
+### Export & Integration
+- [ ] Export notes to PDF format
+- [ ] Export notes to TXT/Markdown format
+- [ ] Import notes from other apps
+- [ ] Calendar integration for scheduled notes
+
+### UI/UX Improvements
+- [ ] Home screen widget for quick note capture
+- [ ] Night mode optimizations
+- [ ] Swipe gestures for quick actions
+- [ ] Animated transitions between screens
+- [ ] Customizable color themes
+
+### Development & Testing
 - [ ] Dependency Injection (Hilt/Koin)
-- [ ] Unit & UI tests
+- [ ] Unit tests for repositories and ViewModels
+- [ ] UI tests for Compose screens
+- [ ] Integration tests for database operations
+- [ ] CI/CD pipeline (GitHub Actions)
+- [ ] Code coverage reporting
+
+### Performance
+- [ ] Database query optimization
+- [ ] Memory leak detection
+- [ ] Performance profiling and benchmarks
+- [ ] Offline-first synchronization
 
 ---
 
 ## Author
 
-**Khalid Hussain**  
-GitHub: [@khalidhussain-dev](https://github.com/khalidhussain-dev)
+**Waseem Mazari**  
+GitHub: [@waseemmazari110](https://github.com/waseemmazari110)  
+Email: mazariwaseem110@gmail.com
+
+### Credits
+
+Original project architecture and design by **Khalid Hussain**  
+Continued development and enhancements by **Waseem Mazari**
+
+### Acknowledgments
+
+- [Jetpack Compose](https://developer.android.com/jetpack/compose) - Modern UI toolkit
+- [Material Design 3](https://m3.material.io/) - Design system and components
+- [Room Database](https://developer.android.com/training/data-storage/room) - Local data persistence
+- [Kotlin Coroutines](https://kotlinlang.org/docs/coroutines-overview.html) - Async programming
+- [Android Community](https://developer.android.com/) - Resources and support
 
 ---
 
 <p align="center">
-  Built with ❤️ using Kotlin & Jetpack Compose
+  <strong>Built with ❤️ using Kotlin & Jetpack Compose</strong><br>
+  <sub>NoteNova © 2026 - All rights reserved</sub>
 </p>
